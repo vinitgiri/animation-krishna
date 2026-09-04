@@ -40,23 +40,28 @@
       display: block;
     }
 
-    #name {
-      position: absolute;
-      left: 50%;
-      top: 90%;
-      transform: translateX(-50%);
-      white-space: nowrap;
-      color: #ffd764;
-      font-size: clamp(16px, 3.5vw, 26px);
-      letter-spacing: 1px;
-      text-shadow:
+   #name {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    text-align: center;
+
+    color: #ffd764;
+    font-size: clamp(16px, 3.5vw, 26px);
+    letter-spacing: 1px;
+
+    text-shadow:
         0 0 5px rgba(255, 215, 100, .75),
         0 0 16px rgba(255, 190, 60, .45),
         0 0 28px rgba(255, 190, 60, .22);
-      opacity: 0;
-      transition: opacity .2s linear;
-      pointer-events: none;
-    }
+
+    opacity: 0;
+    transition: opacity .2s linear;
+    pointer-events: none;
+}
 
     #musicButton {
       position: absolute;
@@ -111,7 +116,11 @@
 <body>
   <main id="stage">
     <canvas id="canvas"></canvas>
-    <div id="name">Vinit Giri</div>
+    <div id="name">
+    <div>🦚 राधे कृष्ण 🦚</div>
+    <div>🪷 🪄 Vinit Giri 🪈 🦚 </div>
+    
+</div>
 
     <button id="musicButton" type="button" aria-label="Turn music on" title="Turn music on">
       <svg id="speakerIcon" viewBox="0 0 48 48" aria-hidden="true">
