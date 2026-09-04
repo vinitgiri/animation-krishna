@@ -43,15 +43,16 @@
     #name {
       position: absolute;
       left: 50%;
-      top: calc(50% + 365px);
+      top: 90%;
       transform: translateX(-50%);
       white-space: nowrap;
       color: #ffd764;
-      font-size: clamp(22px, 6vw, 42px);
+      font-size: clamp(16px, 3.5vw, 26px);
       letter-spacing: 1px;
       text-shadow:
         0 0 5px rgba(255, 215, 100, .75),
-        0 0 16px rgba(255, 190, 60, .35);
+        0 0 16px rgba(255, 190, 60, .45),
+        0 0 28px rgba(255, 190, 60, .22);
       opacity: 0;
       transition: opacity .2s linear;
       pointer-events: none;
@@ -95,7 +96,7 @@
     .hint {
       position: absolute;
       left: 50%;
-      bottom: 18px;
+      bottom: 86px;
       transform: translateX(-50%);
       color: rgba(255,255,255,.38);
       font: 12px/1.2 Arial, sans-serif;
@@ -104,13 +105,13 @@
       transition: opacity .4s ease;
     }
 
-    #stage.show-hint .hint { opacity: 1; }
+    #stage.show-hint .hint { opacity: 10; }
   </style>
 </head>
 <body>
   <main id="stage">
     <canvas id="canvas"></canvas>
-    <div id="name">Vinit Kumar Giri</div>
+    <div id="name">Vinit Giri</div>
 
     <button id="musicButton" type="button" aria-label="Turn music on" title="Turn music on">
       <svg id="speakerIcon" viewBox="0 0 48 48" aria-hidden="true">
@@ -209,9 +210,9 @@
             tx: box.x + x,
             ty: box.y + y,
             r, g, b,
-            delay: Math.random() * 55000,
+            delay: Math.random() * 5000,
             size: 1 + Math.floor(Math.random() * 3),
-            speed: .002 + Math.random() * .004,
+            speed: .010 + Math.random() * .018,
             angle: Math.random() * Math.PI * 2
           });
         }
@@ -304,8 +305,8 @@
       drawSparkles(elapsed, dt);
 
       // Final image reveal after 55 seconds.
-      if (elapsed > 55000) {
-        const alpha = Math.min(1, (elapsed - 55000) / 5000);
+      if (elapsed > 9000) {
+        const alpha = Math.min(1, (elapsed - 9000) / 1800);
         const box = fitImage(source);
         ctx.save();
         ctx.globalAlpha = alpha;
@@ -314,13 +315,13 @@
       }
 
       // Name animation.
-      const nameStart = 55500;
+      const nameStart = 9800;
       if (elapsed > nameStart) {
-        const progress = Math.min(1, (elapsed - nameStart) / 2000);
+        const progress = Math.min(1, (elapsed - nameStart) / 1200);
         const nameAlpha = (1 - Math.cos(progress * Math.PI)) / 2;
         const floatingY = Math.sin(elapsed / 1000 * 2) * 3;
         nameEl.style.opacity = nameAlpha.toFixed(3);
-        nameEl.style.top = `calc(50% + 365px + ${floatingY}px)`;
+        nameEl.style.top = `calc(90% + ${floatingY}px)`;
       }
     }
 
