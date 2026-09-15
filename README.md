@@ -101,4 +101,5 @@ GitHub: https://github.com/vinitgiri
 
 ## 📜 License
 
-Created for educational and creative purposes.
+Created for educational and creative 
+
