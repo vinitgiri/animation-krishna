@@ -101,5 +101,5 @@ GitHub: https://github.com/vinitgiri
 
 ## 📜 License
 
-Created for educational and creative 
+Created for educational and  
 
