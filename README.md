@@ -95,7 +95,7 @@ const MAX_H = 650;
 
 ## 👨‍💻 Author
 
-**Vinit Kumar Giri**
+**Vinit Giri**
 
 GitHub: https://github.com/vinitgiri
 
