@@ -23,7 +23,7 @@ Krishna/
 ├── krishna.png
 ├── song.mp3
 └── README.md
-```
+
 
 > `krishna.png` and `song.mp3` are required assets. Keep both in the same folder as `index.html`.
 
