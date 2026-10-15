@@ -45,7 +45,7 @@ Then open:
 
 ```text
 http://localhost:5500
-```
+
 
 ## 🌐 Deploy on Vercel
 
