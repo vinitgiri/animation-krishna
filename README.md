@@ -3,7 +3,7 @@
 A browser-ready version of the Krishna particle animation, built with **HTML5 Canvas, CSS and JavaScript**.
 
 ## ✨ Features
-
+---
 - Krishna image forms from scattered particles
 - Smooth particle movement
 - Glow and sparkle effects
