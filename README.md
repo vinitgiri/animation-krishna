@@ -88,10 +88,6 @@ Use a smaller value such as `3` for more particles and more image detail.
 
 ### Change image size
 
-```javascript
-const MAX_W = 400;
-const MAX_H = 650;
-```
 
 ## 👨‍💻 Author
 
