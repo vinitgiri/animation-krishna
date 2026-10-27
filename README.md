@@ -84,7 +84,6 @@ Inside the JavaScript:
 
 Use a smaller value such as `3` for more particles and more image detail.
 
-### Change image size
 
 
 ## 👨‍💻 Author
