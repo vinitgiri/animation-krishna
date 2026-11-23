@@ -74,7 +74,7 @@ Inside `index.html`:
 
 ```html
 <div id="name">Vinit Kumar Giri</div>
-```
+``/
 
 ### Change particle density
 
