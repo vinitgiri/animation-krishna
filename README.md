@@ -39,7 +39,7 @@ Open the folder in VS Code and use the **Live Server** extension.
 
 ```bash
 python -m http.server 5500
-```
+``
 
 Then open:
 
